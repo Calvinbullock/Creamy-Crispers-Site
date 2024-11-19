@@ -1,0 +1,17 @@
+
+__Week One Notes__
+
+- class technologies 
+    - npm   -- pkg manger
+    - node
+    - vite  -- bundles help to shrink and
+        - does all the compiling, transpiling, concatenating, minifying, etc 
+    - babel -- used to help js compatability
+    - SCSS/LESS
+    - unit tests
+    - javascript
+    - css / html
+
+- everything seems to be set up and ready
+
+- no questions
