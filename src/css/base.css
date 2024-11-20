@@ -22,7 +22,14 @@ header, footer {
 }
 
 header {
+  margin-left: .5rem;
   margin-bottom: 1rem;
+  padding: .2rem;
+}
+
+#header-logo {
+  width: 50px;
+  margin-right: 1rem;
 }
 
 footer {
