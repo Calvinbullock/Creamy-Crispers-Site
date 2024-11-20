@@ -8,7 +8,8 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, "src/index.html"),
-        success: resolve(__dirname, "src/checkout/success.html"),
+        cookies: resolve(__dirname, "src/cookies/index.html"),
+        iceCream: resolve(__dirname, "src/iceCream/index.html"),
       },
     },
   },
