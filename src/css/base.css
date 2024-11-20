@@ -14,19 +14,18 @@
 * Header / Footer/ Nav
 * ====================================================== */
 
-header {
+header, footer {
+  width: 100%;
   display: flex;
-  width: 1400px;
   height: 20px;
   margin: auto;
+}
+
+header {
   margin-bottom: 1rem;
 }
 
 footer {
-  display: flex;
-  width: 1400px;
-  height: 20px;
-  margin: auto;
   margin-top: 1rem;
 }
 
