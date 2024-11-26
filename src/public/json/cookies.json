@@ -1,0 +1,93 @@
+[
+  {
+    "id": 1,
+    "name": "Classic Chocolate Chip",
+    "description": "Chewy chocolate chip cookies made with real butter and semi-sweet chocolate chips.",
+    "price": 2.49,
+    "image": "https://example.com/images/classic-chocolate-chip.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Snickerdoodle",
+    "description": "Soft cinnamon sugar cookies with a delightful crunch.",
+    "price": 2.29,
+    "image": "https://example.com/images/snickerdoodle.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Double Chocolate Chunk",
+    "description": "Rich and decadent cookies loaded with dark chocolate chunks.",
+    "price": 2.79,
+    "image": "https://example.com/images/double-chocolate-chunk.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Oatmeal Raisin",
+    "description": "Chewy oatmeal cookies packed with plump raisins and a touch of cinnamon.",
+    "price": 2.39,
+    "image": "https://example.com/images/oatmeal-raisin.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Peanut Butter",
+    "description": "Classic peanut butter cookies with a soft and chewy texture.",
+    "price": 2.19,
+    "image": "https://example.com/images/peanut-butter.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Snickerdoodle Blondie",
+    "description": "A twist on the classic Snickerdoodle, with a brown sugar base and cinnamon sugar topping.",
+    "price": 2.49,
+    "image": "https://example.com/images/snickerdoodle-blondie.jpg"
+  },
+  {
+    "id": 7,
+    "description": "Buttery shortbread cookies that melt in your mouth.",
+    "name": "Shortbread",
+    "price": 2.09,
+    "image": "https://example.com/images/shortbread.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Gingerbread",
+    "description": "Spiced gingerbread cookies with a delicious molasses flavor.",
+    "price": 2.59,
+    "image": "https://example.com/images/gingerbread.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Lemon Drop",
+    "description": "Tangy lemon cookies with a sweet and refreshing taste.",
+    "price": 2.39,
+    "image": "https://example.com/images/lemon-drop.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Sugar Cookies",
+    "description": "Vanilla-flavored sugar cookies perfect for decorating.",
+    "price": 1.99,
+    "image": "https://example.com/images/sugar-cookies.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Macadamia Nut",
+    "description": "Buttery cookies with white chocolate chips and crunchy macadamia nuts.",
+    "price": 2.99,
+    "image": "https://example.com/images/macadamia-nut.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Cranberry White Chocolate",
+    "description": "Chewy cookies studded with dried cranberries and white chocolate chips.",
+    "price": 2.69,
+    "image": "https://example.com/images/cranberry-white-chocolate.jpg"
+  },
+  {
+    "id": 13,
+    "name": "Oatmeal Cranberry",
+    "description": "A healthy twist on oatmeal cookies with dried cranberries.",
+    "price": 2.49,
+    "image": "https://example.com/images/oatmeal-cranberry.jpg"
+  }
+]
