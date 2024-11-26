@@ -1,0 +1,63 @@
+
+@import url("./base.css");
+
+/* ========================================================
+* Product pages
+* ====================================================== */
+
+#prod-grid {
+  margin: auto;
+  margin-bottom: 1.5rem;
+  width: 95%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media (width: 700px) {
+  #prod-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (width: 200px) {
+  #prod-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Style the product card container */
+
+.prod-card {
+  background-color: var(--background);
+  border-radius: 5px;
+  box-shadow: 0 2px 5px var(--text);
+  margin: 10px;
+  padding: 15px;
+  text-align: center;
+  display: inline-block;
+  width: calc(90% - 20px);
+}
+
+.prod-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.prod-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.prod-card p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.prod-card .price {
+  font-weight: bold;
+  color: var(--text);
+}
+
