@@ -1,107 +1,79 @@
 [
   {
     "id": 1,
-    "name": "Vanilla Bean",
+    "name": "Vanilla Bean Ice Cream",
     "description": "Creamy vanilla ice cream with real vanilla bean flecks.",
     "price": 5.99,
-    "image": "https://example.com/images/vanilla-bean.jpg"
+    "image": "/images/iceCream-Products/vanilla-Bean.webp"
   },
   {
     "id": 2,
     "name": "Chocolate Fudge Brownie",
     "description": "Rich chocolate ice cream swirled with fudge and brownie chunks.",
     "price": 6.49,
-    "image": "https://example.com/images/chocolate-fudge-brownie.jpg"
+    "image": "/images/iceCream-Products/chocoFudgeBrownie.jpg"
   },
   {
     "id": 3,
     "name": "Strawberry Cheesecake",
     "description": "Creamy cheesecake ice cream with strawberry swirl and cheesecake pieces.",
     "price": 6.99,
-    "image": "https://example.com/images/strawberry-cheesecake.jpg"
+    "image": "/images/iceCream-Products/strawberry-cheesecake-ice-cream.webp"
   },
   {
     "id": 4,
-    "name": "Cookies and Cream",
+    "name": "Cookies and Cream Cookie",
     "description": "Vanilla ice cream with Oreo cookie pieces.",
     "price": 5.99,
-    "image": "https://example.com/images/cookies-and-cream.jpg"
+    "image": "/images/iceCream-Products/cookies-and-cream-bowl.jpg"
   },
   {
     "id": 5,
-    "name": "Mint Chocolate Chip",
+    "name": "Mint Chocolate Chip Cookie",
     "description": "Mint chocolate chip ice cream with dark chocolate chips.",
     "price": 5.99,
-    "image": "https://example.com/images/mint-chocolate-chip.jpg"
+    "image": "/images/iceCream-Products/mint-choc-chip-ice-bowl.jpg"
   },
   {
     "id": 6,
     "name": "Rocky Road",
     "description": "Chocolate ice cream with marshmallows and nuts.",
     "price": 6.29,
-    "image": "https://example.com/images/rocky-road.jpg"
+    "image": "/images/iceCream-Products/rocky-road-ice-bowl.webp"
   },
   {
     "id": 7,
     "name": "Butter Pecan",
     "description": "Buttery ice cream with pecans.",
     "price": 6.49,
-    "image": "https://example.com/images/butter-pecan.jpg"
+    "image": "/images/iceCream-Products/butter-pecon-ice-bowl.jpg"
   },
   {
     "id": 8,
     "name": "Coffee Crunch",
     "description": "Coffee ice cream with crunchy chocolate bits.",
     "price": 6.29,
-    "image": "https://example.com/images/coffee-crunch.jpg"
+    "image": "/images/iceCream-Products/coffee-ice-bowl.jpeg"
   },
   {
     "id": 9,
     "name": "Salted Caramel",
     "description": "Creamy caramel ice cream with sea salt flakes.",
     "price": 6.99,
-    "image": "https://example.com/images/salted-caramel.jpg"
+    "image": "/images/iceCream-Products/salted-carmel-ice-bowl.jpg"
   },
   {
     "id": 10,
     "name": "Black Raspberry",
     "description": "Tart black raspberry ice cream.",
     "price": 5.99,
-    "image": "https://example.com/images/black-raspberry.jpg"
+    "image": "/images/iceCream-Products/black-rasberry-ice-bowl.jpg"
   },
   {
     "id": 11,
     "name": "Maple Walnut",
     "description": "Maple syrup flavored ice cream with walnuts.",
     "price": 6.49,
-    "image": "https://example.com/images/maple-walnut.jpg"
-  },
-  {
-    "id": 12,
-    "name": "Honey Almond",
-    "description": "Honey flavored ice cream with almonds.",
-    "price": 6.29,
-    "image": "https://example.com/images/honey-almond.jpg"
-  },
-  {
-    "id": 13,
-    "name": "Chocolate Chip Cookie Dough",
-    "description": "Vanilla ice cream with chocolate chip cookie dough.",
-    "price": 6.99,
-    "image": "https://example.com/images/chocolate-chip-cookie-dough.jpg"
-  },
-  {
-    "id": 14,
-    "name": "Pistachio",
-    "description": "Pistachio flavored ice cream with pistachio nuts.",
-    "price": 6.49,
-    "image": "https://example.com/images/pistachio.jpg"
-  },
-  {
-    "id": 15,
-    "name": "Matcha Green Tea",
-    "description": "Green tea flavored ice cream.",
-    "price": 5.99,
-    "image": "https://example.com/images/matcha-green-tea.jpg"
+    "image": "/images/iceCream-Products/maple-wallnut-ice-bowl.jpeg"
   }
 ]
