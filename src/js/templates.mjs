@@ -9,7 +9,7 @@ function productTemplate(data) {
   return `
         <div class="prod-card">
           <h3>${data.name}</h3>
-          <img src="${data.image}" alt="${data.name} ice cream">
+          <img src="${data.image}" alt="${data.name}">
           <p>${data.description}</p>
           <span class="price">$${data.price.toFixed(2)}</span>
         </div>
