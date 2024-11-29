@@ -56,3 +56,30 @@ try {
     console.error('Error reading JSON file:', error);
     return null;
   }}
+
+
+/** ====================================================
+ * Read Json File and return as an Json obj
+ * @param {string} key the key for the url paramiter
+ * @returns {string} the param pair
+ */
+export function getParam(param) {
+  const queryString = window.location.search;
+  const urlParams = new URLSearchParams(queryString);
+  const product = urlParams.get(param);
+  return product;
+}
+
+/** ====================================================
+ * takes a category and returns the corresponding json file path
+ * @param {string} category string
+ * @returns {string} path to corresponding json file
+ */
+export function catagoryToPath(catagory) {
+  if (catagory === "cookie") {
+    return "/json/cookies.json";
+  } else if (catagory === "iceCream") {
+    return "/json/iceCream.json";
+  }
+  return null;
+}

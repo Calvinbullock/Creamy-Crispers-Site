@@ -1,2 +1,25 @@
 
 @import url("./base.css");
+
+#item {
+  width: 90%;
+  margin: auto;
+  margin-top: 3rem;
+}
+
+#content {
+  align-content: center;
+  text-align: center;
+}
+
+#add-button {
+  width: 20%;
+  height: 10%;
+  padding: .3rem;
+}
+
+.hero-img {
+  border-radius: var(--cornor-radius);
+  width: 80%;
+  height: 40%;
+}

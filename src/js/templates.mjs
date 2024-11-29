@@ -1,4 +1,4 @@
-import { getProduct as getProductByID, readJsonFile } from "./utils.mjs";
+import { readJsonFile } from "./utils.mjs";
 
 /** ====================================================
  * Product Card Template
@@ -27,7 +27,6 @@ function productTemplate(data, catagory) {
 async function productPageTemplate(filePath, catagory) {
   const gridContainer = document.getElementById("prod-grid");
   const data = await readJsonFile(filePath);
-  console.log(data)
 
   data.forEach(element => {
     const htmlCard = productTemplate(element, catagory);
@@ -42,21 +41,24 @@ async function productPageTemplate(filePath, catagory) {
  * Create Product Item Page Layout
  *
  * @param {string} filePath to the json file with the product data
- * @param {number} the id of the product item
+ * @param {number} id of the product item
  */
-async function productItemTemplate(filePath, id) {
-  const data = await readJsonFile(filePath);
-  data.filter((item) => item.id === id);
+async function productItemTemplate(itemData) {
+  const htmlCard = `
+      <h1>${itemData.name}</h1>
+      <div id="content">
+        <img class="hero-img" src="${itemData.image}" alt="${itemData.name}">
+        <p>${itemData.description}</p>
+        <button id="add-button" type="button">Add To Cart</button>
+      <div/>`;
 
-  const item = getProductByID(data);
-
-  return `
-      <h1>${item.name}</h1>
-      <img src="${item.img}" alt="">
-      <p>${item.desc}</p>
-      <button type="button">Add To Cart</button>`;
+  const cardElement = document.createElement('div');
+  cardElement.id = 'item';
+  cardElement.innerHTML = htmlCard;
+  main.appendChild(cardElement);
 }
 
 export {
   productPageTemplate,
+  productItemTemplate,
 };

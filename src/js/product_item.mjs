@@ -1,12 +1,17 @@
 
-import { getParam } from "../../CSE330-group3/src/js/utils.mjs";
-import { loadHeaderFooter } from "./utils";
+import { productItemTemplate } from "./templates.mjs";
+import { catagoryToPath, loadHeaderFooter, getParam, readJsonFile } from "./utils.mjs";
 
 loadHeaderFooter();
 
+// get json file path
 const catagory = getParam("catagory");
-const id = getParam("id");
+let id = getParam("id");
+id = parseInt(id);
+const dataPath = catagoryToPath(catagory);
 
-console.log(catagory);
-console.log(id);
+// get data and filter to get target item
+let data = await readJsonFile(dataPath);
+data = data.filter(item => item.id === id);
 
+productItemTemplate(data[0]);
