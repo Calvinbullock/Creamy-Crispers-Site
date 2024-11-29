@@ -11,10 +11,10 @@ function productTemplate(data, catagory) {
             <a class="prod-link" href="/product_item_page/index.html?catagory=${catagory}&id=${data.id}">
             <h3>${data.name}</h3>
             <img src="${data.image}" alt="${data.name}">
-            <p>${data.description}</p>
-            <span class="price">$${data.price.toFixed(2)}</span><br/>
-            <button class="add-button" type="button">Add To Cart</button>
           </a>
+          <p>${data.description}</p>
+          <span class="price">$${data.price.toFixed(2)}</span><br/>
+          <button class="add-button" type="button" value="${data.id}">Add To Cart</button>
         </div>
         `;
 }
@@ -43,12 +43,12 @@ async function productPageTemplate(filePath, catagory) {
  * @param {string} filePath to the json file with the product data
  * @param {number} id of the product item
  */
-async function productItemTemplate(itemData) {
+async function productItemTemplate(data) {
   const htmlCard = `
-      <h1>${itemData.name}</h1>
+      <h1>${data.name}</h1>
       <div id="content">
-        <img class="hero-img" src="${itemData.image}" alt="${itemData.name}">
-        <p>${itemData.description}</p>
+        <img class="hero-img" src="${data.image}" alt="${data.name}">
+        <p>${data.description}</p>
         <button id="add-button" type="button">Add To Cart</button>
       <div/>`;
 
