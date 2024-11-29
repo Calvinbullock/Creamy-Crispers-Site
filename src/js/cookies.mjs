@@ -4,5 +4,5 @@ import { productPageTemplate } from "./templates.mjs";
 
 loadHeaderFooter();
 
-productPageTemplate("/json/cookies.json");
+productPageTemplate("/json/cookies.json", "cookie");
 

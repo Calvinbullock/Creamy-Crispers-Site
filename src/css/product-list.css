@@ -46,6 +46,16 @@
   margin-bottom: 10px;
 }
 
+.prod-link {
+  text-decoration: none;
+  color: var(--text);
+}
+
+.prod-link a:visited {
+  text-decoration: none;
+  color: var(--text);
+}
+
 .prod-card img {
   width: 100%;
   height: auto;
@@ -62,5 +72,10 @@
 .prod-card .price {
   font-weight: bold;
   color: var(--text);
+}
+
+.add-button {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 

@@ -4,4 +4,4 @@ import { productPageTemplate } from "./templates.mjs";
 
 loadHeaderFooter();
 
-productPageTemplate("/json/iceCream.json");
+productPageTemplate("/json/iceCream.json", "iceCream");
