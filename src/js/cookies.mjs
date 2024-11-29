@@ -1,6 +1,7 @@
 
-import { loadHeaderFooter } from "./utils";
+import { loadHeaderFooter, catagoryToPath } from "./utils";
 import { productPageTemplate } from "./templates.mjs";
+import { } from "./utils.mjs";
 
 loadHeaderFooter();
 
