@@ -58,7 +58,43 @@ async function productItemTemplate(data) {
   main.appendChild(cardElement);
 }
 
+/** ====================================================
+ * Create Product Item Page Layout For the Cart
+ *
+ * @param {object} item - product in the cart
+ */
+function cartProductItemTemplate(item) {
+  return `<li class="cart-item">
+          <h3>${item.name}</h3>
+            <div class="cart-item-img">
+              <img src="${item.image}" alt="${item.name}">
+            </div>
+            <div class="cart-item-descripton">
+              <p>$ ${item.price}</p>
+            </div>
+          </li>`;
+}
+
+/** ====================================================
+ * Create Cart Page Layout
+ *
+ * @param {list} items in the cart (list of objects)
+ */
+async function cartPageTemplate(data) {
+  data.forEach(item => {
+    // turn the items into html
+    const htmlCard = cartProductItemTemplate(item);
+
+    // add to the DOM
+    const cartList = document.getElementById("product-list");
+    const cardElement = document.createElement('div');
+    cardElement.innerHTML = htmlCard;
+    cartList.appendChild(cardElement);
+  });
+}
+
 export {
   productPageTemplate,
   productItemTemplate,
+  cartPageTemplate,
 };

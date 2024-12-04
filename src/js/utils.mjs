@@ -48,7 +48,7 @@ export async function loadHeaderFooter() {
  * @returns {json obj} jsonObj
  */
 export async function readJsonFile(filePath) {
-try {
+  try {
     const response = await fetch(filePath);
     const jsonData = await response.json();
     return jsonData;
@@ -83,3 +83,50 @@ export function catagoryToPath(catagory) {
   }
   return null;
 }
+
+/** ====================================================
+ * Adds an item to the cart in local storage.
+ *
+ * @param {Object} item - The item to add to the cart.
+ *   - `id`: The unique identifier of the item.
+ *   - `name`: The name of the item.
+ *   - `price`: The price of the item.
+ *   // ... other properties as needed
+ */
+export function addToCart(item) {
+  let cart = JSON.parse(localStorage.getItem('cart')) || [];
+  cart.push(item);
+
+  // Update the cart in local storage
+  localStorage.setItem('cart', JSON.stringify(cart));
+}
+
+/** ====================================================
+ * Retrieves the cart items from local storage.
+ *
+ * @returns {Array} An array of cart items.
+ */
+export function getCartItems() {
+  const cart = JSON.parse(localStorage.getItem('cart')) || [];
+  return cart;
+}
+
+/** ====================================================
+ * Retrieves the product item object matching the
+ *    category and the id
+ *
+ * @returns {Array} An array of cart items.
+ */
+export async function getProductObj(category, id) {
+  // get category data
+  const dataPath = catagoryToPath(category);
+  let data = await readJsonFile(dataPath);
+
+  console.log(data)
+
+  // filter for id
+  data = data.filter(item => item.id === id);
+  console.log(data[0])
+  return data[0];
+}
+
