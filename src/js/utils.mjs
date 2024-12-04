@@ -94,6 +94,13 @@ export function catagoryToPath(catagory) {
  *   // ... other properties as needed
  */
 export function addToCart(item) {
+
+  // make sure item is not null
+  if (item == null || item == undefined) {
+    console.log("cart item null");
+    return;
+  }
+
   let cart = JSON.parse(localStorage.getItem('cart')) || [];
   cart.push(item);
 
@@ -115,18 +122,24 @@ export function getCartItems() {
  * Retrieves the product item object matching the
  *    category and the id
  *
+ * @param {string} category
+ * @param {number} id
+ *
  * @returns {Array} An array of cart items.
  */
 export async function getProductObj(category, id) {
+
+  // ensure id is an number
+  if (!Number.isInteger(id)) {
+    id = parseInt(id);
+  }
+
   // get category data
   const dataPath = catagoryToPath(category);
   let data = await readJsonFile(dataPath);
 
-  console.log(data)
-
   // filter for id
   data = data.filter(item => item.id === id);
-  console.log(data[0])
   return data[0];
 }
 
