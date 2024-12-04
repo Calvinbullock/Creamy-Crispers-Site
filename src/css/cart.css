@@ -5,6 +5,8 @@ li {
   margin: 1rem;
 }
 
+
+/* TODO: img and content overlaps on small screens*/
 .cart-item {
   max-height: 160px;
   display: flex;

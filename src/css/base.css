@@ -63,6 +63,10 @@ main {
 * Other
 * ====================================================== */
 
+button {
+  border-radius: var(--cornor-radius);
+}
+
 button:hover {
   background-color: var(--2ndary-accent);
 }
