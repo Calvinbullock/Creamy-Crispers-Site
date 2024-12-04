@@ -1,9 +1,28 @@
 
-import { loadHeaderFooter, catagoryToPath } from "./utils";
+import { loadHeaderFooter } from "./utils";
 import { productPageTemplate } from "./templates.mjs";
-import { } from "./utils.mjs";
+import { addToCart, getProductObj } from "./utils.mjs";
+
+const category = "cookie";
 
 loadHeaderFooter();
 
-productPageTemplate("/json/cookies.json", "cookie");
+productPageTemplate("/json/cookies.json", category);
 
+// add to cart on button click
+document.addEventListener('click', (event) => {
+  if (event.target.classList.contains('add-button')) {
+    const id = event.target.value;
+
+    // get then add the item to cart
+    getProductObj(category, id)
+      .then(item => {
+        addToCart(item);
+
+      }).catch(error => {
+        console.error("Error getting product:", error);
+
+      });
+
+  }
+});
