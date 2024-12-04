@@ -64,13 +64,16 @@ async function productItemTemplate(data) {
  * @param {object} item - product in the cart
  */
 function cartProductItemTemplate(item) {
-  return `<li class="cart-item">
-          <h3>${item.name}</h3>
-            <div class="cart-item-img">
-              <img src="${item.image}" alt="${item.name}">
-            </div>
-            <div class="cart-item-descripton">
-              <p>$ ${item.price}</p>
+  return `<li>
+            <div class="cart-item">
+              <div class="cart-item-img">
+                <img class="cart-img" src="${item.image}" alt="${item.name}">
+              </div>
+              <div class="cart-item-descripton">
+                <h3>${item.name}</h3>
+                <p>${item.description}</p>
+                <p>$ ${item.price}</p>
+              </div>
             </div>
           </li>`;
 }
