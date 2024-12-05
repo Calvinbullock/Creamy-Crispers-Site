@@ -143,3 +143,15 @@ export async function getProductObj(category, id) {
   return data[0];
 }
 
+/** ====================================================
+ * Totals all the prices in the cart
+ *
+ * @param {object} objectList - all the objects in the
+ * @returns {number} total cost of everything in the cart
+ */
+export function calculateCartTotal(itemList) {
+  let total = 0;
+  itemList.forEach(item => { total += item.price; });
+  return total;
+}
+
