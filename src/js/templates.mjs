@@ -72,7 +72,7 @@ function cartProductItemTemplate(item) {
               <div class="cart-item-descripton">
                 <h3>${item.name}</h3>
                 <p>${item.description}</p>
-                <p>$ ${item.price}</p>
+                <p>Price - $${item.price}</p>
               </div>
             </div>
           </li>`;
