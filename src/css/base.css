@@ -45,6 +45,10 @@ header {
   width: 40px;
 }
 
+.footer-br {
+  margin-top: 3rem;
+}
+
 footer {
   margin-top: 1rem;
 }

@@ -104,6 +104,8 @@ export function addToCart(item) {
   let cart = JSON.parse(localStorage.getItem('cart')) || [];
   cart.push(item);
 
+  // TODO: Animation func here
+
   // Update the cart in local storage
   localStorage.setItem('cart', JSON.stringify(cart));
 }
