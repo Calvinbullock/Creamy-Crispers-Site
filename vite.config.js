@@ -5,6 +5,7 @@ export default defineConfig({
   root: "src/",
 
   build: {
+    target: ['es2022'],
     rollupOptions: {
       input: {
         main: resolve(__dirname, "src/index.html"),
