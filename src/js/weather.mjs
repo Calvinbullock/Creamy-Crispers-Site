@@ -2,13 +2,10 @@
 // API SCRIPT
 //
 
-// Rexberg Lat and long
+// API URL and vars
 const lat = "43.82";
 const lon = "-111.79";
-
 const apiKey = import.meta.env.VITE_WEATHER_API_KEY;
-
-// API URL
 const url = `api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${apiKey}`;
 
 // GET / DEAL WITH API
